@@ -2,13 +2,141 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Louise Abrena's Github Page</title>
+    <link rel="stylesheet" type="text/css" href="css/styles.css" />
+    <script src="js/script.js"></script>
+    <title>Lumi</title>
   </head>
   <body>
-    <h1>Let's talk about Accessibility (a11y)!</h1>
-    <h2> <a href="https://99percentinvisible.org/episode/on-average/"> On Average </h2></a>
-    <p>The podcast, On Average, shows how there is no denying that in this day and age, everything we use on a daily basis is based on the ‘average size’ that we all know. Our shirts are based on the average ‘small, medium, and large’, whether we’re overweight or not is also based on the ‘average height and weight’, most importantly websites these days are also based on the average. The average font is known to be between 10-12 while the average font style is Arial and Times New Roman, text colors are also always the average ‘white and black’. This means that most websites that have been published and are being developed are also following the ‘average’. Even though this makes the website simple and easy to read there are still few consequences that we face while following the ‘average’. We can not deny that whenever a developer is set to build a website, oftentimes, the personas that they use are derived from the average people that may get access to these websites they are building, seeing people and people that can read well. Some even choose aesthetic over accessibility which means most functions are only based on what ‘average’ websites should be. The color that has been used might be harder for others to see because of the contrast, the font size that the website choses might be too small for others, the font style might be too edgy for those who are still learning a new language, and the lack of accessibility features, such as read aloud, might make this said website inaccessible for those who want to learn about the services they need. While following what we’ve been used to, we neglect those who are also wanting to access these websites. It’s amazing how technologies, and the world all in all, are always evolving but we still tend to go back to the ‘average’ and miss our opportunity to explore more features that can be more accessibility for more people other than just the average. </p>
+    <!-- ============= Check in (page 1) ============= -->
+  <header id="checkinhi">
+    <div id="checkin">
+      <p id="intro">
+        Hi Lucy! Let's take the time to check-in on yourself today.
+      </p>
+      <img id="mascot" src="img/mascot.png" width="150" alt="pink teddy bear" />
+      <br />
+      <button id="checkinbutton" value="Check in">Check in ></button>
+    </div>
+  </header>
+    <!-- ============= Input check in (page 3) ============= -->
+  <section id ="checkinquestions">
+    <form name="checkintime" action="#" method="get">
+        <button id="skip" value="skip">Skip ></button>
+        <p>
+        <label for="questions1">How was your sleep last night?</label>
+        <br />
+        <img
+          id="sleepimage"
+          src="img/sleep.png"
+          width="150"
+          alt="person sleeping in the bed"
+        />
+        <input
+          type="range"
+          min="1"
+          max="10"
+          value="5"
+          class="slider"
+          id="questions1"
+          name="questions1"
+        />
+        </p>
+        <img id="note" src="img/notepad.png" width="30" alt="notepad" />
+        <img id="mic" src="img/mic.png" width="30" alt="microphone" />
+        <br />
+        <!-- <button id="next2" value="next">></button> -->
+      <!-- ============= Input check in (page 4) ============= -->
+    
+        <!-- <button id="skip" value="skip">Skip ></button> -->
+        <p>
+        <label for="questions2"> How do you feel today? </label>
+        <img id="emoticon" src="img/happy.png" width="30" alt="happy" />
+        <img id="emoticon" src="img/meh.png" width="30" alt="meh" />
+        <img id="emoticon" src="img/emotional.png" width="30" alt="emotional" />
+        <img id="emoticon" src="img/sad.png" width="30" alt="happy" />
+        <input
+          type="range"
+          min="1"
+          max="4"
+          value="2"
+          class="slider"
+          id="questions2"
+          name="questions2"
+        />
+        </p>
+        <img id="note" src="img/notepad.png" width="30" alt="notepad" />
+        <img id="mic" src="img/mic.png" width="30" alt="microphone" />
+        <br />
+        <!-- <button id="back1" value="previous"><</button>
+        <button id="next3" value="next">></button> -->
+      <!-- ============= Input check in (page 5) ============= -->
+        <!-- <button id="skip" value="skip">Skip ></button> -->
+        <p>
+        <label for="questions3"> Is there anything you would like to journal? </label>
+        <br/>
+        <input type="textarea" id="questions3" name="questions3"/>
+        </p>
+        <img id="mic" src="img/mic.png" width="30" alt="microphone" />
+        <br />
+        <!-- <button id="back2" value="previous"><</button> -->
+        <input type="submit" value=">" />
+    </form>
+  </section>
+    <!-- ============= Check in (page 6) ============= -->
+    <div id="summary">
+      <div id="summary1">
+        <p id="conclusion">
+          Thanks for sharing, Lucy. I'll keep this details safe for you.
+        </p>
+        <img
+          id="mascot"
+          src="img/mascot.png"
+          width="150"
+          alt="pink teddy bear"
+        />
+        <br />
+        <button id="summaryButton" value="summary">Summary ></button>
+      </div>
+      </div>
+      <!-- ============= Summary (page 7) ============= -->
+      <div id="summary2">
+        <div id="sleepSummary">
+          <img
+            id="sleepimageResult"
+            src="img/sleep.png"
+            width="30"
+            alt="sleeping person"
+          />
+          <span id="result_sleep"></span>
+        </div>
+        <div id="emoticonSummary">
+          <img
+            id="sleepimageResult"
+            src="img/happy.png"
+            width="30"
+            alt="happy emoji"
+          />
+          <span id="result_emotions"></span>
+        </div>
+        <div id="noteSummary">
+          <img id="noteResult" src="img/notepad.png" width="30" alt="notepad" />
+          <span id="result_note"></span>
+        </div>
+        <br />
+        <br />
+        <br />
+        <br />
+        <p>Today's activity suggestion!</p>
+        <br/> 
+        <h4 id="end">Let's try going on a walk today!</h4>
+        <img
+          id="mascotstanding"
+          src="img/mascotStanding.png"
+          width="150"
+          alt="pink teddy bear"
+        />
+      </div>
+    </div>
   </body>
 </html>
